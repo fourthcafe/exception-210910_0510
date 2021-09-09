@@ -1,0 +1,22 @@
+### 목록 보기
+GET http://localhost:8080/members
+
+
+### 정상 실행
+POST http://localhost:8080/members
+Content-Type: application/json
+
+{
+	"name": "spring b",
+	"age": 23
+}
+
+
+### exception 발생
+POST http://localhost:8080/members
+Content-Type: application/json
+
+{
+	"name": "spring b",
+	"age": "qe"
+}
